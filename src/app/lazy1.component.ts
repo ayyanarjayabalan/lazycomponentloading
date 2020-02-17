@@ -1,16 +1,16 @@
-import { Component, OnInit } from '@angular/core';
-import { BaseComponent } from './base.component';
+import { Component, OnInit, ViewContainerRef, ComponentFactoryResolver } from '@angular/core';
 
 @Component({
   templateUrl: './lazy1.component.html',
   styleUrls: ['./lazy1.component.css']
 })
-export class Lazy1Component extends BaseComponent implements OnInit {
+export class Lazy1Component implements OnInit {
   constructor() {
-    super();
   }
 
-  ngOnInit(): void {
+  async ngOnInit(): Promise<void> {
+
+
   }
 
 }
